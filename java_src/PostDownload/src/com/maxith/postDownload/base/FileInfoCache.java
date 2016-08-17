@@ -1,7 +1,7 @@
 package com.maxith.postDownload.base;
 /**
  * 文件缓存信息对象
- * Description: 
+ * Description:
  * Copyright: Maxith
  * Date: 2016年8月16日
  * Time: 下午3:56:10
@@ -10,13 +10,18 @@ package com.maxith.postDownload.base;
  */
 public class FileInfoCache {
 
-	public static final String FILE_NAME_KEY = "file_name";
-	
-	public static final String FILE_PATH_KEY = "file_path";
-	
+	/**
+	 * 文件名(不带后缀)
+	 */
 	private String fileName;
-	
-	private String filePath;
+	/**
+	 * 文件后缀
+	 */
+	private String fileSuffix;
+	/**
+	 * 临时文件绝对路径
+	 */
+	private String fileTempPath;
 
 	public String getFileName() {
 		return fileName;
@@ -26,12 +31,20 @@ public class FileInfoCache {
 		this.fileName = fileName;
 	}
 
-	public String getFilePath() {
-		return filePath;
+	public String getFileSuffix() {
+		return fileSuffix;
 	}
 
-	public void setFilePath(String filePath) {
-		this.filePath = filePath;
+	public void setFileSuffix(String fileSuffix) {
+		this.fileSuffix = fileSuffix;
 	}
-	
+
+	public String getFileTempPath() {
+		return fileTempPath;
+	}
+
+	public void setFileTempPath(String fileTempPath) {
+		this.fileTempPath = fileTempPath;
+	}
+
 }

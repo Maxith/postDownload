@@ -3,7 +3,7 @@ package com.maxith.postDownload.service;
 import com.maxith.postDownload.base.FileInfoCache;
 /**
  * 文件信息缓存
- * Description: 
+ * Description:
  * Copyright: Maxith
  * Date: 2016年8月16日
  * Time: 下午3:53:11
@@ -12,31 +12,21 @@ import com.maxith.postDownload.base.FileInfoCache;
  */
 public interface ICacheService {
 	/**
-	 * 创建文件信息缓存对象
-	 * @return
-	 * Description: 
-	 * Date: 2016年8月16日
-	 * Time: 下午4:16:33
-	 * @author Maxith
-	 */
-	public FileInfoCache createCacheFile();
-	
-	/**
 	 * 写缓存
 	 * @param cache 缓存对象
 	 * @return	缓存文件key
-	 * Description: 
+	 * Description:
 	 * Date: 2016年8月16日
 	 * Time: 下午3:53:24
 	 * @author Maxith
 	 */
 	public String write(FileInfoCache cache);
-	
+
 	/**
 	 * 读缓存
 	 * @param fileKey 缓存文件key
 	 * @return	缓存对象
-	 * Description: 
+	 * Description:
 	 * Date: 2016年8月16日
 	 * Time: 下午3:53:32
 	 * @author Maxith
@@ -45,7 +35,7 @@ public interface ICacheService {
 	/**
 	 * 删除缓存
 	 * @param fileKey
-	 * Description: 
+	 * Description:
 	 * Date: 2016年8月16日
 	 * Time: 下午4:49:08
 	 * @author Maxith
